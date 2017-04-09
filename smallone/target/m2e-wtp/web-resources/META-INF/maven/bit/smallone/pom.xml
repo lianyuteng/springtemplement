@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" ?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
@@ -7,27 +8,40 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>smallone Maven Webapp</name>
 	<url>http://maven.apache.org</url>
-	
-	
-	
-	<profiles>  
-    <profile>  
-        <id>jdk-1.8</id>  
-        <activation>  
-            <activeByDefault>true</activeByDefault>  
-            <jdk>1.8</jdk>  
-        </activation>  
-        <properties>  
-            <maven.compiler.source>1.8</maven.compiler.source>  
-            <maven.compiler.target>1.8</maven.compiler.target>  
-            <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>  
-        </properties>  
-    </profile>  
-</profiles> 
-	
-	
-	
+
+
+
+	<profiles>
+		<profile>
+			<id>jdk-1.8</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+				<jdk>1.8</jdk>
+			</activation>
+			<properties>
+				<maven.compiler.source>1.8</maven.compiler.source>
+				<maven.compiler.target>1.8</maven.compiler.target>
+				<maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
+			</properties>
+		</profile>
+	</profiles>
+
+
+
 	<dependencies>
+		<!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis</artifactId>
+			<version>3.2.8</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>2.7</version>
+		</dependency>
 
 
 		<!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
@@ -42,7 +56,26 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>4.3.7.RELEASE</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>4.3.7.RELEASE</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-test -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>4.3.6.RELEASE</version>
+		</dependency>
 
+
+		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.38</version>
+		</dependency>
 
 
 

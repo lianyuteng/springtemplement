@@ -8,6 +8,7 @@
 	<enableImports><![CDATA[false]]></enableImports>
 	<configs>
 		<config>src/main/resources/spring-mybatis.xml</config>
+		<config>src/main/resources/ibatis.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
